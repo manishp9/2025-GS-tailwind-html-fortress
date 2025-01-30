@@ -1,0 +1,262 @@
+@media all and (max-width:1799px) {}
+
+@media all and (max-width:1599px) {}
+
+@media all and (max-width:1399px) {}
+
+@media all and (max-width:1199px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .right-box {
+        width: 100%;
+        flex-direction: column;
+        align-items: end !important;
+        padding: 20px 0;
+        gap: 25px;
+
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: end !important;
+        gap: 25px;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .innovation-info h1 {
+        font-size: 65px;
+    }
+
+    .about-us-info h2 {
+        font-size: 65px;
+    }
+
+    .about-us-info p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .challenging-info h1 {
+        font-size: 65px;
+    }
+
+    .challenging-para h4::before {
+        left: -25%;
+    }
+}
+
+@media all and (max-width:991px) {
+    body {
+        padding-top: 116px;
+    }
+
+    .header-main {
+        padding: 30px 0;
+        height: 116px;
+    }
+
+    .innovation-info h1 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    .about-us-info h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .contact-info h2 {
+        font-size: 50px;
+        line-height: 55px;
+        padding-bottom: 20px;
+    }
+
+    .challenging-info h1 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    .challenging-para h4::before {
+        left: -28%;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .contact-form input {
+        height: 60px;
+        padding: 0 20px
+    }
+
+    .input-div label {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .input-div.active label {
+        left: 20px;
+        font-size: 14px;
+    }
+
+    .contact-form textarea {
+        padding: 30px 20px;
+    }
+
+}
+
+@media all and (max-width:767px) {
+
+    .challenging-para h4::before {
+        content: unset;
+    }
+
+    .innovation-info,
+    .innovation-img {
+        width: 100%;
+    }
+
+    .innovation-banner {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .innovation-info h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .innovation-img img {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: unset;
+    }
+
+    .innovation-banner-main {
+        height: unset;
+        overflow: unset;
+        padding-top: 0;
+    }
+
+    .innovation-banner-main .container {
+        padding: 0;
+    }
+
+    .innovation-info {
+        padding: 0 20px;
+    }
+
+    .challenging-info,
+    .challenging-img {
+        width: 100%;
+    }
+
+    .challenging {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .challenging-info h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .challenging-img img {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: unset;
+    }
+
+    .challenging-main {
+        height: unset;
+        overflow: unset;
+    }
+
+    .about-us-info,
+    .about-us-img {
+        width: 100%;
+    }
+
+    .about-us-info {
+        order: 1;
+    }
+
+    .about-us {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-us-info h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .about-us-img img {
+        width: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-address {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-address ul {
+        flex-direction: row;
+    }
+
+    .footer-items h4 {
+        padding-bottom: 10px;
+    }
+
+    .footer-items {
+        text-align: center;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+}
+
+@media all and (max-width:567px) {
+
+    .logo-box,
+    .footer-logo {
+        width: 150px;
+    }
+
+    .innovation-btn a,
+    .nav-btns a {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+}

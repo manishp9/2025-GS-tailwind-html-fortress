@@ -1,0 +1,588 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); */
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('../font/FavoritExtraBoldC.woff2') format('woff2'),
+        url('../font/FavoritExtraBoldC.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('../font/FavoritC-Bold.woff2') format('woff2'),
+        url('../font/FavoritC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('../font/FavoritBookC.woff2') format('woff2'),
+        url('../font/FavoritBookC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('../font/FavoritHeavyC.woff2') format('woff2'),
+        url('../font/FavoritHeavyC.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('../font/FavoritLightC.woff2') format('woff2'),
+        url('../font/FavoritLightC.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('../font/FavoritC.woff2') format('woff2'),
+        url('../font/FavoritC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../font/NeueMachina-Light.woff2') format('woff2'),
+        url('../font/NeueMachina-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../font/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('../font/NeueMachina-Ultrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../font/NeueMachina-Regular.woff2') format('woff2'),
+        url('../font/NeueMachina-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    padding-top: 155px;
+}
+
+a {
+    transition: all ease 0.3s;
+}
+
+a:hover {
+    transform: scale(0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Favorit', sans-serif;
+    color: var(--heading-black);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header-container {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1660px;
+    margin: 0 auto;
+    background: var(--white);
+}
+
+.container {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+section {
+    padding: 120px 0;
+    scroll-margin-top: 155px;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.border-0 {
+    border: unset !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.transition {
+    transition: all ease 0.3s;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --heading-black: #121612;
+    --main-green: #CBE5C5;
+    --grey: #D9D9D9;
+    --light-green: #EDF6EB;
+    --light-grey: #4D504D;
+
+}
+
+
+/* HEADER STYLING START  */
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--white);
+    z-index: 999;
+    height: 155px;
+}
+.logo-box, .footer-logo{
+    width: 220px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-box {
+    gap: 53px;
+
+}
+
+.nav-items {
+    gap: 42px;
+    list-style: none;
+}
+
+.nav-items li a {
+    letter-spacing: 2px;
+    color: var(--heading-black);
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-items li a:hover {
+    border-bottom: 2px solid var(--heading-black);
+}
+
+.nav-btns {
+    gap: 18px;
+
+}
+
+.nav-btns a {
+    padding: 0 25px;
+    height: 53px;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+}
+
+.nav-btns a:first-child {
+    background-color: var(--main-green);
+}
+
+.nav-btns a:nth-child(2) {
+    background-color: var(--heading-black);
+    color: var(--grey);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+/* HEADER STYLING FINIESHED  */
+/* INNOVATION BANNER STYLING START  */
+.innovation-banner-main {
+    background: var(--heading-black);
+    overflow: hidden;
+    height: calc(100dvh - 155px);
+}
+
+.innovation-banner {
+    justify-content: space-between;
+    height: 100%;
+}
+
+.innovation-info,
+.innovation-img {
+    width: 50%;
+}
+
+.innovation-img {
+    overflow: visible;
+    height: 100%;
+}
+
+.innovation-img img {
+    position: relative;
+    max-width: unset;
+    top: -120px;
+    width: 211%;
+    object-fit: cover;
+    height: calc(130% + 120px);
+
+}
+
+.innovation-info {
+    padding-right: 20px;
+}
+
+.innovation-info h1 {
+    color: var(--main-green);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.innovation-btn {
+    gap: 18px;
+    padding-top: 71px;
+
+}
+
+.innovation-btn a {
+    padding: 0 25px;
+    height: 53px;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+}
+
+.innovation-btn a:first-child {
+    background-color: var(--main-green);
+}
+
+.innovation-btn a:nth-child(2) {
+    background-color: var(--heading-black);
+    color: var(--grey);
+    border: 1px solid var(--main-green);
+}
+
+/* INNOVATION BANNER STYLING FINIESHED  */
+/* ABOUT US STYLING START  */
+.about-us-main {
+    background: var(--light-green);
+}
+
+.about-us-info,
+.about-us-img {
+    width: 50%;
+}
+
+.about-us-info {
+    padding-right: 20px;
+}
+
+.about-us-info h2 {
+    color: var(--heading-black);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.about-us-info p {
+    color: var(--heading-black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 487px;
+    padding-top: 30px;
+}
+
+/* ABOUT US STYLING FINIESHED  */
+/* CHALLENGING STYLING START  */
+.challenging-main {
+    background: var(--heading-black);
+    overflow: hidden;
+    height: 1170px;
+}
+
+.challenging {
+    justify-content: space-between;
+    height: 100%;
+}
+
+.challenging-info {
+    width: 50%;
+}
+
+.challenging-img {
+    width: 30%;
+}
+
+.challenging-img {
+    overflow: visible;
+    height: 100%;
+}
+
+.challenging-img img {
+    position: relative;
+    max-width: unset;
+    top: -122px;
+    left: -70%;
+    object-fit: cover;
+    width: 150%;
+    height: calc(120% + 122px);
+
+}
+
+.challenging-info {
+    padding-left: 20px;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.challenging-info h1 {
+    color: var(--main-green);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.challenging-para h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 74px;
+    color: var(--main-green);
+    position: relative;
+}
+
+.challenging-para h4::before {
+    position: absolute;
+    content: "";
+    width: 84px;
+    height: 2px;
+    top: 50%;
+    left: -18%;
+    background: var(--white);
+}
+
+.challenging-para p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    color: var(--white);
+}
+
+/* CHALLENGING STYLING FINIESHED  */
+/* CONTACT US STYLING START  */
+.contact-us-main {
+    background: var(--light-green);
+}
+
+.contact-info,
+.contact-form {
+    width: 50%;
+}
+
+.contact-info h2 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+    padding-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.contact-form form {
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.contact-form .input-div {
+    width: 100%;
+}
+
+.contact-form input {
+    height: 76px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    resize: none;
+    font-size: 18px;
+        padding: 30px 30px;
+}
+
+.input-btn a {
+    background: var(--heading-black);
+    color: var(--white);
+    height: 53px;
+    padding: 20px 21px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.input-btn {
+    align-self: start;
+}
+
+.input-div {
+    position: relative;
+}
+
+.input-div label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 30px;
+    font-size: 30px;
+    height: 100%;
+    font-weight: 300;
+    transition: all ease 0.3s;
+}
+.input-div .textarea-label {
+    top: -40px;
+}
+.input-div.active .textarea-label {
+    top: -110px;
+}
+
+.input-div.active label {
+    padding-left: 0;
+    top: -36%;
+    left: 30px;
+    font-size: 16px;
+}
+.input-div input:focus,  .input-div input:focus-visible{
+  border: unset;
+  outline: unset;
+}
+
+.submit-sucess {
+    background: #DFF0D8;
+    color: #659464 !important;
+    font-size: 15px !important;
+    padding: 10px;
+    letter-spacing: 1px !important;
+    font-weight: 500;
+    width: 100%;
+}
+
+.submit-un-sucess {
+    background: #EDD1D1;
+    color: #B95458 !important;
+    font-size: 15px !important;
+    padding: 10px;
+    letter-spacing: 1px !important;
+    font-weight: 500;
+    width: 100%;
+}
+
+/* CONTACT US STYLING FINIESHED  */
+/* FOOTER STYLING START  */
+.footer-main {
+    background: var(--heading-black);
+    padding: 80px 0;
+}
+
+.footer {
+    justify-content: space-between;
+}
+
+.footer-address {
+    gap: 40px;
+}
+
+.footer-address ul {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    list-style: none;
+}
+
+.footer-address p {
+    color: var(--light-grey);
+    line-height: 30px;
+}
+
+.footer-address a {
+    color: var(--light-grey);
+    text-decoration: none;
+
+}
+
+.footer-address a:hover {
+    text-decoration: underline;
+}
+
+.footer-items h4 {
+    color: var(--light-grey);
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+}
+
+.footer-items p {
+    color: var(--light-grey);
+}
+
+.footer-items p span {
+    color: var(--light-grey);
+}
+
+/* FOOTER STYLING FINIESHED  */
